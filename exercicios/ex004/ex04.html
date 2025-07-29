@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Dom.</title>
+    <style>
+body{
+    background-color: rgb(19, 2, 2);
+    color: white;
+
+
+}
+div#area{
+text-align: center;
+    margin: auto;
+    width: 100px;
+    border-radius: 5px;
+    height: 20px
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com o Dom!</h1>
+<p>Iniciando um estudo de forma rapida e aplicando na hora.</p> 
+
+<div id="area" onclick="Clicar()">
+    
+    CLIQUE AQUI 
+</div>
+<script>
+   var a = window.document.getElementById("area")
+ a.addEventListener("click", Clicar)
+ a.addEventListener("mouseenter", entrar)
+ a.addEventListener("mouseout",sair)
+
+ function Clicar(){
+     a.innerText ='CLICOU!'
+     a.style.background= "gray"
+
+ }
+
+  function entrar(){
+     a.innerText ='ENTROU!'
+     a.style.background= "gray"
+
+ }
+   function sair(){
+     a.innerText ='SAIU!'
+     a.style.background= "gray"
+
+ }
+
+</script>
+
+
+</body>
+
+</html>
